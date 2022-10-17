@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form>  
+          
+         <h:outputLabel value = "Centro de Servicio "></h:outputLabel> 
+         <h:inputText value = "#{beanPractica.codigoCentroSalud}"></h:inputText>  
+         <h:inputText value = "#{beanPractica.centroDeSalud}" readonly="true"></h:inputText>  
+            <br></br>
+            <br></br>
+              <h:outputLabel>Tipo de Servicio</h:outputLabel>
+              <h:inputText value="#{beanPractica.codigoDeTipoServicio}"></h:inputText>
+            <h:selectOneMenu >
+                <f:selectItems value="#{beanPractica.listaServicio}"/>
+            </h:selectOneMenu>
+              <br></br>
+            <br></br>
+             <h:outputLabel>Especialidad</h:outputLabel>
+             <h:inputText value="#{beanPractica.codigoDeEspecialidades}"></h:inputText>
+            <h:selectOneMenu >
+                <f:selectItems value="#{beanPractica.listaEspecialidades}"/>
+            </h:selectOneMenu>
+            <br></br>
+            <br></br>
+<!-- 
+  
+  <h:outputLabel value = "Tipo de Sexo Aplica"></h:outputLabel>
+            <h:selectOneMenu  value="#{beanIngreso.rol}"> 
+               <h:inputText value = "#{beanIngreso.usuario}"> </h:inputText> <f:selectItems  value="#{beanIngreso.listaRol}"></f:selectItems> 
+            </h:selectOneMenu>
+ <br> </br>
+  <br> </br>
+  <h:outputLabel value = "Impresión de Hora Cita"></h:outputLabel>
+            <h:selectOneMenu  value="#{beanIngreso.rol}"> 
+               <h:inputText value = "#{beanIngreso.usuario}"> </h:inputText> <f:selectItems  value="#{beanIngreso.listaRol}"></f:selectItems> 
+            </h:selectOneMenu>
+ <br> </br>
+  <br> </br>
+ <h:outputLabel value = "Cantidad de Atraso"></h:outputLabel> 
+            <h:inputText value = "#{beanIngreso.usuario}"></h:inputText>
+          
+
+            <br></br>
+            <br></br>
+
+
+            <h:commandButton value="Ingresar" actionListener="#{beanIngreso.ingresar()}"></h:commandButton>
+            <br></br>
+            <br></br>-->
+        </h:form>
+    </h:body>
+</html>
+
