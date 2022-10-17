@@ -28,31 +28,23 @@
             </h:selectOneMenu>
             <br></br>
             <br></br>
-<!-- 
+            <h:outputLabel>Tipo de sexo aplicar:</h:outputLabel>
+            <h:selectOneMenu >
+                <f:selectItems value="#{beanPractica.listaGenero}"/>
+            </h:selectOneMenu>
+            <br></br>
+            <br></br>
+ <h:outputLabel>Tipo de hora:</h:outputLabel>
+            <h:selectOneMenu >
+                <f:selectItems value="#{beanPractica.listaGenero}"/>
+            </h:selectOneMenu>
+            <br></br>
+            <br></br>
   
-  <h:outputLabel value = "Tipo de Sexo Aplica"></h:outputLabel>
-            <h:selectOneMenu  value="#{beanIngreso.rol}"> 
-               <h:inputText value = "#{beanIngreso.usuario}"> </h:inputText> <f:selectItems  value="#{beanIngreso.listaRol}"></f:selectItems> 
-            </h:selectOneMenu>
- <br> </br>
-  <br> </br>
-  <h:outputLabel value = "Impresión de Hora Cita"></h:outputLabel>
-            <h:selectOneMenu  value="#{beanIngreso.rol}"> 
-               <h:inputText value = "#{beanIngreso.usuario}"> </h:inputText> <f:selectItems  value="#{beanIngreso.listaRol}"></f:selectItems> 
-            </h:selectOneMenu>
- <br> </br>
-  <br> </br>
- <h:outputLabel value = "Cantidad de Atraso"></h:outputLabel> 
-            <h:inputText value = "#{beanIngreso.usuario}"></h:inputText>
-          
-
+  
+<h:commandButton value="Ingresar" onclick="#{beanPractica.codigoCentroSalud}"></h:commandButton>
             <br></br>
             <br></br>
-
-
-            <h:commandButton value="Ingresar" actionListener="#{beanIngreso.ingresar()}"></h:commandButton>
-            <br></br>
-            <br></br>-->
         </h:form>
     </h:body>
 </html>

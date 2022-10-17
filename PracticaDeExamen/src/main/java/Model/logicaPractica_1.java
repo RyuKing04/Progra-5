@@ -42,4 +42,14 @@ public class logicaPractica_1 {
            listSpecia.add(new SelectItem("Psicologia"));
         return listSpecia;
         }
+        //Fin de especialidades
+        //Inicio de genero
+        public LinkedList<SelectItem> listaGenero(){
+        LinkedList ListaGenero= new LinkedList();
+        ListaGenero.add(new SelectItem("Ambas"));
+        ListaGenero.add(new SelectItem("Masculino"));
+        ListaGenero.add(new SelectItem("Femenino"));
+        return ListaGenero;
 }
+
+    }

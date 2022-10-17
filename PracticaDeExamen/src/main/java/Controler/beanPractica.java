@@ -21,6 +21,9 @@ public class beanPractica {
     String Especialidades;
     String codigoDeEspecialidades="0";
     LinkedList<SelectItem> listaEspecialidades= new LinkedList();
+    LinkedList<SelectItem> listaGenero= new LinkedList();
+
+    
 
     
 //Inicio de Centro de salud
@@ -123,4 +126,17 @@ public class beanPractica {
     public void setListaEspecialidades(LinkedList<SelectItem> listaEspecialidades) {
         this.listaEspecialidades = listaEspecialidades;
     }
+    //Fin de especialidades
+    //Inicio de Genero
+
+    public LinkedList<SelectItem> getListaGenero() {
+        logicaPractica_1 ListaGenero= new logicaPractica_1();
+        
+        return ListaGenero.listaGenero();
+    }
+
+    public void setListaGenero(LinkedList<SelectItem> listaGenero) {
+        this.listaGenero = listaGenero;
+    }
+    
     }
