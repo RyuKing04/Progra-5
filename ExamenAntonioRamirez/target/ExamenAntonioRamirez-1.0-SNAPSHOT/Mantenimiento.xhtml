@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+       <h:form>
+
+            <!--1-->
+            <h:outputLabel>Cedula</h:outputLabel>
+            <br></br>
+            <h:inputText value="#{beanMantenimiento.ced}"></h:inputText>
+            <br></br>
+            <br></br> 
+
+
+            <!--2-->
+            <h:outputLabel>Nombre</h:outputLabel>
+            <br></br>
+            <h:inputText value="#{beanMantenimiento.nombre}"></h:inputText>
+            <br></br>
+            <br></br> 
+
+
+            <!--3-->
+            <h:outputLabel>Edad</h:outputLabel>
+            <br></br>
+            <h:inputText value="#{beanMantenimiento.edad}"></h:inputText>
+            <br></br>
+            <br></br> 
+
+
+            <!--4-->
+            <h:outputLabel>Estado civil:</h:outputLabel>
+            <h:selectOneMenu onchange="submit()" value="#{beanMantenimiento.estadoCivil}">
+                <f:selectItems value="#{beanMantenimiento.listEstadoCivil}" />
+            </h:selectOneMenu>
+            <br></br> 
+            <br></br>             
+
+
+
+            <!--5-->
+            <h:outputLabel>Salario</h:outputLabel>
+            <br></br>
+            <h:inputText value="#{beanMantenimiento.salario}"></h:inputText>
+            <br></br>
+            <br></br> 
+
+
+
+            <!--6-->
+            <h:outputLabel>Provincia:</h:outputLabel>
+            <h:selectOneMenu onchange="submit()" value="#{beanMantenimiento.provincia}">
+                <f:selectItems value="#{beanMantenimiento.listProvincia}"/>
+            </h:selectOneMenu>
+            <br></br> 
+            <br></br>  
+
+
+
+            <!--7-->
+            <h:commandButton value="Imprimir" actionListener="#{beanMantenimiento.imprimir()}" > </h:commandButton>
+            <h:inputTextarea value="#{beanMantenimiento.mensaje}"></h:inputTextarea>
+
+
+            <!--8-->
+            <h:commandButton value="Limpiar" actionListener="#{beanMantenimiento.clear()}" > </h:commandButton>
+
+
+        </h:form>
+    </h:body>
+</html>
+

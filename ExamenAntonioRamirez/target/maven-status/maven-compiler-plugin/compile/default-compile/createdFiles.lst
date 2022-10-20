@@ -1,0 +1,5 @@
+com\mycompany\examenantonioramirez\JAXRSConfiguration.class
+Controller\beanLogin.class
+Controller\beanMantenimiento.class
+Model\Mantenimiento.class
+com\mycompany\examenantonioramirez\resources\JavaEE8Resource.class
