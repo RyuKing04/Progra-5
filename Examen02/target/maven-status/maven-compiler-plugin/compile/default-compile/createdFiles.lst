@@ -1,0 +1,5 @@
+DAO\AccesoDatos.class
+Model\Detalle.class
+com\mycompany\examen02\JAXRSConfiguration.class
+com\mycompany\examen02\resources\JavaEE8Resource.class
+DAO\SNMPExceptions.class
