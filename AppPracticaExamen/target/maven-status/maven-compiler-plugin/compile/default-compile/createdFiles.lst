@@ -1,0 +1,8 @@
+DAO\AccesoDatos.class
+Model\Detalle.class
+com\mycompany\apppracticaexamen\JAXRSConfiguration.class
+Controller\BeanDatosCompra.class
+DAO\SNMPExceptions.class
+Model\DatosCompra.class
+com\mycompany\apppracticaexamen\resources\JavaEE8Resource.class
+DAO\DatosCompraDAO.class
